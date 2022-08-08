@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
-
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="460.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainViewController">
    <center>
@@ -25,82 +26,82 @@
             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: thistle; -fx-border-color: black;" text="1">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" style="-fx-background-color: thistle; -fx-border-color: black;" text="1">
                <font>
                   <Font name="AIGDT" size="30.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: thistle; -fx-border-color: black;" text="2" GridPane.columnIndex="1">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" style="-fx-background-color: thistle; -fx-border-color: black;" text="2" GridPane.columnIndex="1">
                <font>
                   <Font name="AIGDT" size="30.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-border-color: black; -fx-background-color: thistle;" text="4" GridPane.rowIndex="1">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" style="-fx-border-color: black; -fx-background-color: thistle;" text="4" GridPane.rowIndex="1">
                <font>
                   <Font name="AIGDT" size="30.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: thistle; -fx-border-color: black;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" style="-fx-background-color: thistle; -fx-border-color: black;" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font name="AIGDT" size="30.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: thistle; -fx-border-color: black;" text="7" GridPane.rowIndex="2">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" style="-fx-background-color: thistle; -fx-border-color: black;" text="7" GridPane.rowIndex="2">
                <font>
                   <Font name="AIGDT" size="30.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: thistle; -fx-border-color: black;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" style="-fx-background-color: thistle; -fx-border-color: black;" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
                <font>
                   <Font name="AIGDT" size="30.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: thistle; -fx-border-color: black;" text="3" GridPane.columnIndex="2">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" style="-fx-background-color: thistle; -fx-border-color: black;" text="3" GridPane.columnIndex="2">
                <font>
                   <Font name="AIGDT" size="30.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: thistle; -fx-border-color: black;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" style="-fx-background-color: thistle; -fx-border-color: black;" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font name="AIGDT" size="30.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: thistle; -fx-border-color: black;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" style="-fx-background-color: thistle; -fx-border-color: black;" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <font>
                   <Font name="AIGDT" size="30.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: thistle; -fx-border-color: black;" text="0" GridPane.rowIndex="3">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" style="-fx-background-color: thistle; -fx-border-color: black;" text="0" GridPane.rowIndex="3">
                <font>
                   <Font name="AIGDT" size="30.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: thistle; -fx-border-color: black;" text="=" GridPane.columnIndex="1" GridPane.rowIndex="3">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" style="-fx-background-color: thistle; -fx-border-color: black;" text="=" GridPane.columnIndex="1" GridPane.rowIndex="3">
                <font>
                   <Font name="AIGDT" size="30.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: thistle; -fx-border-color: black;" text="C" GridPane.columnIndex="2" GridPane.rowIndex="3">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" style="-fx-background-color: thistle; -fx-border-color: black;" text="C" GridPane.columnIndex="2" GridPane.rowIndex="3">
                <font>
                   <Font name="AIGDT" size="30.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: thistle; -fx-border-color: black;" text="+" GridPane.columnIndex="3">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" style="-fx-background-color: thistle; -fx-border-color: black;" text="+" GridPane.columnIndex="3">
                <font>
                   <Font name="AIGDT" size="30.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: thistle; -fx-border-color: black;" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" style="-fx-background-color: thistle; -fx-border-color: black;" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1">
                <font>
                   <Font name="AIGDT" size="30.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: thistle; -fx-border-color: black;" text="/" GridPane.columnIndex="3" GridPane.rowIndex="2">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" style="-fx-background-color: thistle; -fx-border-color: black;" text="/" GridPane.columnIndex="3" GridPane.rowIndex="2">
                <font>
                   <Font name="AIGDT" size="30.0" />
                </font>
             </Button>
-            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" style="-fx-background-color: thistle; -fx-border-color: black;" text="*" GridPane.columnIndex="3" GridPane.rowIndex="3">
+            <Button maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onMouseClicked="#onMouseClick" style="-fx-background-color: thistle; -fx-border-color: black;" text="*" GridPane.columnIndex="3" GridPane.rowIndex="3">
                <font>
                   <Font name="AIGDT" size="30.0" />
                </font>
@@ -113,6 +114,14 @@
          <font>
             <Font name="AIGDT" size="18.0" />
          </font>
+         <content>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="expression" alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="58.0" prefHeight="18.0" prefWidth="393.0" text="21" textAlignment="CENTER" />
+                  <Label layoutX="400.0" layoutY="102.0" text="Label" />
+               </children>
+            </AnchorPane>
+         </content>
       </TitledPane>
    </top>
 </BorderPane>

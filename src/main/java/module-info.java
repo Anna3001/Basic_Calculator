@@ -1,4 +1,4 @@
-module Basic_Calculator {
+module Basic.Calculator {
     requires javafx.graphics;
     requires javafx.fxml;
     requires javafx.controls;

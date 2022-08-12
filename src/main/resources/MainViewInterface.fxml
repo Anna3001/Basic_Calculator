@@ -110,15 +110,15 @@
       </GridPane>
    </center>
    <top>
-      <TitledPane collapsible="false" prefHeight="180.0" prefWidth="460.0" text="Basic Calculator" BorderPane.alignment="CENTER">
+      <TitledPane collapsible="false" prefHeight="186.0" prefWidth="471.0" text="Basic Calculator" BorderPane.alignment="CENTER">
          <font>
             <Font name="AIGDT" size="18.0" />
          </font>
          <content>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <AnchorPane prefHeight="150.0" prefWidth="446.0">
                <children>
-                  <Label fx:id="expression" alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="58.0" prefHeight="18.0" prefWidth="393.0" text="21" textAlignment="CENTER" />
-                  <Label layoutX="400.0" layoutY="102.0" text="Label" />
+                  <Label fx:id="expression" alignment="CENTER" contentDisplay="CENTER" layoutX="27.0" layoutY="66.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="18.0" prefWidth="400.0" textAlignment="CENTER" />
+                  <Label fx:id="result" layoutX="334.0" layoutY="102.0" prefHeight="18.0" prefWidth="79.0" />
                </children>
             </AnchorPane>
          </content>

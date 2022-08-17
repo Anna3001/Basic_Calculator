@@ -2,7 +2,9 @@ package sample;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 
@@ -70,6 +72,24 @@ public class MainViewController implements Initializable {
                 break;
             case "=":
                 double result = Expression.evaluate(this.getExpression().getText());
+                if(result == 10000000.0) {
+                    Alert alert = new Alert(Alert.AlertType.ERROR, "The result is too large!", ButtonType.OK);
+                    alert.showAndWait();
+                    clearExpression();
+                    break;
+                }
+                if(result == 10000001.0) {
+                    Alert alert = new Alert(Alert.AlertType.ERROR, "This is not an expression!", ButtonType.OK);
+                    alert.showAndWait();
+                    clearExpression();
+                    break;
+                }
+                if(result == 10000002.0) {
+                    Alert alert = new Alert(Alert.AlertType.ERROR, "One or more of the given numbers is/are too large! The maximum value is 10000.", ButtonType.OK);
+                    alert.showAndWait();
+                    clearExpression();
+                    break;
+                }
                 setResult(String.valueOf(result));
                 break;
         }

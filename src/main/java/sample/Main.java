@@ -5,6 +5,4 @@ public class Main {
         MainView mainView = new MainView();
         mainView.run();
     }
-
-
 }
